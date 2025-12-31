@@ -1,73 +1,74 @@
-# Welcome to your Lovable project
+# 🧾 ERP Inventory & Accounting System
 
-## Project info
+A MongoDB-based ERP inventory module for managing items, stock, pricing, and GST.
+This project is built for learning, testing, and extending into a full ERP system.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 📌 Features
 
-There are several ways of editing your application.
+- Add & manage inventory items
+- GST-compliant pricing (India)
+- Opening stock & reorder level tracking
+- Unit-based stock handling (PCS, KG, LTR, etc.)
+- MongoDB-ready schema
+- Clean and professional UI
+- Ready for sales, purchase & accounting integration
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 📦 Item Fields
 
-Changes made via Lovable will be committed automatically to this repo.
+Each item includes the following fields:
 
-**Use your preferred IDE**
+| Field | Description |
+|------|------------|
+| itemName | Name of product or service |
+| hsnBatchNo | HSN code or batch number |
+| unit | Measurement unit (PCS, KG, LTR, MTR, BAG) |
+| purchasePrice | Purchase price (₹) |
+| salePrice | Sale price (₹) |
+| gstRate | GST percentage |
+| openingStock | Initial stock quantity |
+| reorderLevel | Low-stock alert threshold |
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠 Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Frontend:** HTML, CSS, JavaScript / React
+- **Backend:** Node.js (Express)
+- **Database:** MongoDB (Local / Atlas)
+- **Tools:** MongoDB Compass
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📊 Business Logic
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- Opening stock is recorded at item creation
+- Reorder level triggers low-stock alerts
+- Sale price − purchase price = profit margin
+- GST is calculated per item during billing
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 🔐 Planned Enhancements
 
-**Edit a file directly in GitHub**
+- Role-based access (Admin / User)
+- Company-wise multi-tenant system
+- Stock auto-update on sales & purchases
+- Sales & Purchase invoices
+- Payments, receipts & journal entries
+- Reports & dashboards
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📄 License
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This project is intended for educational and practice purposes.
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## ✨ Author
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+**Shlok Panchal**  
+2nd Year AIML Student  
+Symbiosis Institute of Technology, Pune
